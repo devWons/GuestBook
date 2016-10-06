@@ -1,0 +1,42 @@
+/*부트스트랩 주소: http://bootstrapk.com/components/ */
+/* margin 순서 */
+/* 4개 다 쓸 경우 시계 방향으로 [위 오른쪽 아래 왼쪽] */
+/* 3개 쓸 경우 [위,아래 오른쪽,왼쪽] */
+/* 2개 쓸 경우 [위 오른쪽,왼쪽 아래] */
+/* 1개 쓸 경우 [위,오른쪽,아래,왼쪽] */
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px; resize: none;}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none; color: #000;}
+a:hover,a:active,a:focus{text-decoration: none; color: #000;}
+a img { border: 0; }
+
+.tc {text-align: center !important;}
+.tl {text-align: left !important;}
+.mb03 {margin-bottom: 3px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.ml0 {margin-left: 0px !important;}
+.ml05 {margin-left: 5px !important;}
+.ml10 {margin-left: 10px !important;}
+.mr0 {margin-right: 0px !important;}
+.mr10 {margin-right: 10px !important;}
+.mr30 {margin-right: 30px !important;}
+.mt05 {margin-top:5px !important;}
+.mt10 {margin-top:10px !important;}
+.mt20 {margin-top:20px !important;}
+.mt30 {margin-top:30px !important;}
+.float_l {float: left !important;}
+.float_r {float: right !important;}
+.height50 {height: 50px;}
+.inline {display: inline-block !important;}
+.width90 {width: 90% !important;}
+.dispNone {display: none !important;}
+.dispBlock {display: block !important;}
+.dispInline {display: inline-block !important;}
+.cursorPointer {cursor: pointer}
+.cursorPointer:HOVER {font-size:13px;}

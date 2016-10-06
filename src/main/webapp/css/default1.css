@@ -1,0 +1,67 @@
+/*부트스트랩 주소: http://bootstrapk.com/components/ */
+/* margin 순서 */
+/* 4개 다 쓸 경우 시계 방향으로 [위 오른쪽 아래 왼쪽] */
+/* 3개 쓸 경우 [위,아래 오른쪽,왼쪽] */
+/* 2개 쓸 경우 [위 오른쪽,왼쪽 아래] */
+/* 1개 쓸 경우 [위,오른쪽,아래,왼쪽] */
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px; resize: none;}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none; color: #000;}
+a:hover,a:active,a:focus{text-decoration: none; color: #000;}
+a img { border: 0; }
+
+body {
+	background-color: #f4f4f4;
+}
+
+.tc {text-align: center !important;}
+.tl {text-align: left !important;}
+.mb03 {margin-bottom: 3px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.ml0 {margin-left: 0px !important;}
+.ml05 {margin-left: 5px !important;}
+.ml10 {margin-left: 10px !important;}
+.mr0 {margin-right: 0px !important;}
+.mr10 {margin-right: 10px !important;}
+.mr30 {margin-right: 30px !important;}
+.mt05 {margin-top:5px !important;}
+.mt10 {margin-top:10px !important;}
+.mt20 {margin-top:20px !important;}
+.mt30 {margin-top:30px !important;}
+.float_l {float: left !important;}
+.float_r {float: right !important;}
+.height50 {height: 50px;}
+.inline {display: inline-block !important;}
+.width90 {width: 90% !important;}
+.dispNone {display: none !important;}
+.dispBlock {display: block !important;}
+.dispInline {display: inline-block !important;}
+.cursorPointer {cursor: pointer}
+.cursorPointer:HOVER {font-size:13px;}
+
+/* Layout */
+#wrap {width:500px; margin:0 auto;}
+#comment_wrap {display:inline-block; width:100%; margin-bottom: 50px; border: 1px solid #ff8000;}
+#comment_wrap:after{display:block;clear:both;content:''}
+#commentBox {width:380px; float: left; border: 1px solid #000;}
+#commentListBox {width:100%; height:100px; border: 1px solid #008080;}
+
+.commentInputBox {width: 320px;}
+.btnSaveComment {width: 40px; float: right; vertical-align: middle; border: 1px solid #000;}
+
+/* TABLE 종류*/
+.tableBasic01 {width:100%; font-size:12px; word-wrap:break-word; table-layout:fixed;}
+.tableBasic01 th {background-color: #808080; color: #FFF}
+.tableBasic01 tr {height:40px; border-bottom: 1px #ddd solid;}
+.tableBasic01 tr:hover {color:#ee770b; font-weight: bold;}
+
+.tableBasic02 {width:100%; font-size:12px; word-wrap:break-word; table-layout:fixed;}
+.tableBasic02 th {background-color: #808080; color: #FFF}
+.tableBasic02 tr {height:40px; border-bottom: 1px #ddd solid;}
+.tableBasic02 td {border: 1px solid #000;}

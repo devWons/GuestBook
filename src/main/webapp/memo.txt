@@ -1,0 +1,8 @@
+//------ 최초 autoset 설치 후 사용자추가. 권한은 모든컬럼 Y로 변경하면됨 ----------- 
+use mysql;
+select * from user;
+insert into user (host, user, password) values ('localhost', 'skswodnjs', password('rlaqkq1wnf!'));
+delete from user where user='skswdonjs';
+CREATE DATABASE skswodnjs01;
+show databases;
+
