@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UnsanMapper">
+	<sql id="SELECT_SEARCH_WHERE">
+		<if test="searchContent != '' || searchContent != null">
+			<if test="subject == 'all'">
+				AND (bb.bbs_title LIKE CONCAT('%', #{searchContent},'%') OR bb.bbs_content LIKE CONCAT('%', #{searchContent},'%') OR bb.bbs_writer_name LIKE CONCAT('%', #{searchContent},'%'))
+			</if>
+			<if test="subject == 'title'">
+				AND bb.bbs_title LIKE CONCAT('%', #{searchContent},'%')
+			</if>
+			<if test="subject == 'content'">
+				AND bb.bbs_content LIKE CONCAT('%', #{searchContent},'%')
+			</if>
+			<if test="subject == 'writerName'">
+				AND bb.bbs_writer_name = #{searchContent}
+			</if>
+		</if>
+	</sql>
+
+	<select id="selectUserList" parameterType="UserInfoVO" resultType="UserInfoVO">
+		SELECT
+			  USER_ID
+			, USER_NAME
+			, USER_EMAIL
+			, USER_PASSWORD
+			, USER_PHONE
+			, USER_CHARACTER
+			, USER_GROUP
+			, USER_AUTHORITY
+			, AGREE_YN
+			, USER_PROFILE_IMG_IDX
+			, DEL_YN
+			, DATE_FORMAT(REG_DT, '%Y-%m-%d') AS REG_DT
+		FROM
+			user_info
+		WHERE
+			DEL_YN = 'N'
+		AND USER_GROUP = #{userGroup}
+	</select>
+</mapper>

@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.si.top.unsan.domain.UnsanVO;
+import com.si.top.unsan.domain.UserInfoVO;
 
 @Repository
 public class UnsanDaoImpl implements UnsanDao {
@@ -15,8 +15,8 @@ public class UnsanDaoImpl implements UnsanDao {
 	SqlSession session;
 
 	@Override
-	public List<UnsanVO> selectUserList() {
-		return session.selectList("selectUserList");
+	public List<UserInfoVO> selectUserList(UserInfoVO userInfoVo) {
+		return session.selectList("selectUserList", userInfoVo);
 	}
 
 }

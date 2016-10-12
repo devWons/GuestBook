@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.si.top.unsan.dao.UnsanDao;
-import com.si.top.unsan.domain.UnsanVO;
+import com.si.top.unsan.domain.UserInfoVO;
 
 @Service
 public class UnsanServiceImpl implements UnsanService {
@@ -18,8 +18,8 @@ public class UnsanServiceImpl implements UnsanService {
 	UnsanDao unsanDao;
 
 	@Override
-	public List<UnsanVO> selectUserList() {
-		return unsanDao.selectUserList();
+	public List<UserInfoVO> selectUserList(UserInfoVO userInfoVo) {
+		return unsanDao.selectUserList(userInfoVo);
 	}
 
 }

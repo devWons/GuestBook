@@ -22,7 +22,7 @@
 				"index" : 0
 			},
 			"user" : {
-				"background" : "#E9931A",
+				"background" : "#6884EA",
 				"index" : 1
 			},
 			"mapmarker" : {

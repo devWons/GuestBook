@@ -1,6 +1,6 @@
 package com.si.top.unsan.domain;
 
-public class UnsanVO {
+public class UserInfoVO {
 
 	private String userId;
 	private String userName;
@@ -8,7 +8,7 @@ public class UnsanVO {
 	private String userPassword;
 	private String userPhone;
 	private String userCharacter;
-	private String userGender;
+	private String userGroup;
 	private String userAuthority;
 	private String userAgreeYn;
 	private String userUserPrifileImgIdx;
@@ -54,11 +54,11 @@ public class UnsanVO {
 	public void setUserCharacter(String userCharacter) {
 		this.userCharacter = userCharacter;
 	}
-	public String getUserGender() {
-		return userGender;
+	public String getUserGroup() {
+		return userGroup;
 	}
-	public void setUserGender(String userGender) {
-		this.userGender = userGender;
+	public void setUserGroup(String userGroup) {
+		this.userGroup = userGroup;
 	}
 	public String getUserAuthority() {
 		return userAuthority;
@@ -107,6 +107,15 @@ public class UnsanVO {
 	}
 	public void setModDt(String modDt) {
 		this.modDt = modDt;
+	}
+	
+	@Override
+	public String toString() {
+		return "UserInfoVO [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail
+				+ ", userPassword=" + userPassword + ", userPhone=" + userPhone + ", userCharacter=" + userCharacter
+				+ ", userGroup=" + userGroup + ", userAuthority=" + userAuthority + ", userAgreeYn=" + userAgreeYn
+				+ ", userUserPrifileImgIdx=" + userUserPrifileImgIdx + ", delYn=" + delYn + ", regId=" + regId
+				+ ", regDt=" + regDt + ", modId=" + modId + ", modDt=" + modDt + "]";
 	}
 	
 }
