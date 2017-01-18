@@ -17,8 +17,8 @@ public class JSOUPConnection {
 		
 		System.out.println("코레일 로그인 START!");
 		System.out.println("-------------------------------------------------------------------");
-		String kNum = "1064186723";
-		String kPw = "dnstks2fl!";
+		String kNum = "123123";
+		String kPw = "123123123";
 		//코레일 로그인하기
 		JSOUPConnection jc = new JSOUPConnection();
 		Response res = jc.login(kNum, kPw);
